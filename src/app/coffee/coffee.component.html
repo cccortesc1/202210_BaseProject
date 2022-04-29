@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <h1 class="display-2 p-3 titleIfl">El aroma mágico</h1>
+  <div class="p-4">
+    <img src="../../assets/bannerCoffee.png" alt="El aroma mágico">
+  </div>
+  <div class="col-6 p-4">
+    <table class="table text-light bg-dark ">
+      <thead>
+        <tr>
+          <th class="h4">#</th>
+          <th class="h4">Nombre</th>
+          <th class="h4">Tipo</th>
+          <th class="h4">Región</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let coffee of coffees" class="text-dark bg-white">
+          <td>
+            <dd class="font-weight-bold">{{coffee.id}}</dd>
+          </td>
+          <td>
+            <dd>{{coffee.nombre}}</dd>
+          </td>
+          <td>
+            <dd>{{coffee.tipo}}</dd>
+          </td>
+          <td>
+            <dd>{{coffee.region}}</dd>
+          </td>
+       </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
