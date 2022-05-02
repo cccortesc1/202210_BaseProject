@@ -1,5 +1,8 @@
 .titleIfl{
-  font-family: 'Indie Flower', cursive;
+  font-family: indie-flower,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2em;
 }
 
 #table{

@@ -42,8 +42,17 @@ describe('CoffeeComponent', () => {
     const fixture = TestBed.createComponent(CoffeeComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.th span')?.textContent).toContain(
-      'Nombre'
+    expect(compiled.querySelector('th')?.textContent).toContain(
+      '#'
+    );
+  });
+
+  it('should render rows', () => {
+    const fixture = TestBed.createComponent(CoffeeComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelectorAll('tbody tr')?.length).toBeGreaterThan(
+      0
     );
   });
 
